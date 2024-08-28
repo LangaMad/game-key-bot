@@ -25,7 +25,7 @@ async def categories(message: Message):
 
 @router.message(F.text == 'Все игры') 
 async def games(message: Message): 
-    await message.answer('Выберите игру:',reply_markup= await all_games_kb(page=1))
+    await message.answer('Выберите игру:')
 
 
 # @router.message(Command("help"))
